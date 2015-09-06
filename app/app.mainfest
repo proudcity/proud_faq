@@ -1,6 +1,6 @@
 name = Proud Answers
 description = FAQ content type for the Q and A section
-machine_name = helm_faq
+machine_name = proud_faq
 version = 7.x-1.0-beta1
 author = Albatross Digital
 author_url = http://albatrossdigital.com
