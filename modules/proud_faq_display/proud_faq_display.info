@@ -1,7 +1,7 @@
-name = Helm FAQ Display
-description = Create Panels and Views for Helm FAQ
+name = Proud FAQ Display
+description = Create Panels and Views for Proud FAQ
 core = 7.x
-package = Helm Display
+package = Proud Display
 dependencies[] = defaultconfig
 dependencies[] = entity
 dependencies[] = panelizer

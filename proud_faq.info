@@ -1,7 +1,7 @@
-name = Helm FAQ
+name = Proud FAQ
 description = FAQ content type for the Q and A section
 core = 7.x
-package = Helm
+package = Proud
 version = 7.x-1.0-beta1
 project = proud_faq
 dependencies[] = color_field
