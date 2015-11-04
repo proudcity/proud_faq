@@ -10,27 +10,20 @@
 function proud_faq_taxonomy_default_vocabularies() {
   return array(
     'faq_category' => array(
-      'name' => 'FAQ Category',
+      'name' => 'FAQ category',
       'machine_name' => 'faq_category',
-      'description' => 'Organize FAQ entries',
-      'hierarchy' => 1,
+      'description' => '',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
+    ),
+    'faq_section' => array(
+      'name' => 'FAQ section',
+      'machine_name' => 'faq_section',
+      'description' => '',
+      'hierarchy' => 0,
+      'module' => 'taxonomy',
+      'weight' => 0,
     ),
   );
 }

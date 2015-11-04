@@ -17,6 +17,18 @@ function proud_faq_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -29,6 +41,12 @@ function proud_faq_field_default_field_instances() {
         'weight' => 0,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -88,6 +106,18 @@ function proud_faq_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'settings' => array(),
@@ -95,6 +125,12 @@ function proud_faq_field_default_field_instances() {
         'weight' => 20,
       ),
       'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'list' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -145,12 +181,30 @@ function proud_faq_field_default_field_instances() {
     'deleted' => 0,
     'description' => '',
     'display' => array(
+      'card' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'contact' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'default' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 23,
+      ),
+      'list' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'live_results_search' => array(
         'label' => 'above',
@@ -196,9 +250,9 @@ function proud_faq_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-faq-field_tags'
-  $field_instances['node-faq-field_tags'] = array(
-    'bundle' => 'faq',
+  // Exported field_instance: 'taxonomy_term-faq_category-field_faq_section'
+  $field_instances['taxonomy_term-faq_category-field_faq_section'] = array(
+    'bundle' => 'faq_category',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -208,36 +262,28 @@ function proud_faq_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 22,
+        'weight' => 1,
       ),
-      'live_results_search' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-      'teaser' => array(
+      'full' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 0,
       ),
     ),
-    'entity_type' => 'node',
-    'field_name' => 'field_tags',
-    'label' => 'Tags',
-    'required' => FALSE,
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_faq_section',
+    'label' => 'Sections',
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 3,
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 0,
     ),
   );
 
@@ -281,7 +327,7 @@ function proud_faq_field_default_field_instances() {
       'module' => 'fontawesome_field',
       'settings' => array(),
       'type' => 'fontawesome_field_widget_color',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -291,7 +337,7 @@ function proud_faq_field_default_field_instances() {
   t('Category');
   t('Icon');
   t('Link');
-  t('Tags');
+  t('Sections');
 
   return $field_instances;
 }

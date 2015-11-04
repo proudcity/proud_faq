@@ -37,7 +37,7 @@ function proud_faq_node_info() {
       'description' => t('FAQs are question / answer combos housed in the "Quick Answer" sections of the site.'),
       'has_title' => '1',
       'title_label' => t('Question'),
-      'help' => t('<a href="http://www.baltimore.ifsight.com/help/content/faq#page-title" class="contextual-help">Help creating a How do I?</a>'),
+      'help' => '',
     ),
   );
   drupal_alter('node_info', $items);
